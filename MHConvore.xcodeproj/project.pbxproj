@@ -17,15 +17,15 @@
 		406C97A5130C80F600EDC431 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 406C97A4130C80F600EDC431 /* CoreServices.framework */; };
 		406C97A7130C810000EDC431 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 406C97A6130C810000EDC431 /* libz.dylib */; };
 		406C97A9130C813500EDC431 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 406C97A8130C813500EDC431 /* SystemConfiguration.framework */; };
-		406C97B4130C816800EDC431 /* MHConvoreClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 406C97AA130C816800EDC431 /* MHConvoreClient.h */; };
+		406C97B4130C816800EDC431 /* MHConvoreClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 406C97AA130C816800EDC431 /* MHConvoreClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		406C97B5130C816800EDC431 /* MHConvoreClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 406C97AB130C816800EDC431 /* MHConvoreClient.m */; };
-		406C97B6130C816800EDC431 /* MHConvoreGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 406C97AC130C816800EDC431 /* MHConvoreGroup.h */; };
+		406C97B6130C816800EDC431 /* MHConvoreGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 406C97AC130C816800EDC431 /* MHConvoreGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		406C97B7130C816800EDC431 /* MHConvoreGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 406C97AD130C816800EDC431 /* MHConvoreGroup.m */; };
-		406C97B8130C816800EDC431 /* MHConvoreMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 406C97AE130C816800EDC431 /* MHConvoreMessage.h */; };
+		406C97B8130C816800EDC431 /* MHConvoreMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 406C97AE130C816800EDC431 /* MHConvoreMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		406C97B9130C816800EDC431 /* MHConvoreMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 406C97AF130C816800EDC431 /* MHConvoreMessage.m */; };
-		406C97BA130C816800EDC431 /* MHConvoreTopic.h in Headers */ = {isa = PBXBuildFile; fileRef = 406C97B0130C816800EDC431 /* MHConvoreTopic.h */; };
+		406C97BA130C816800EDC431 /* MHConvoreTopic.h in Headers */ = {isa = PBXBuildFile; fileRef = 406C97B0130C816800EDC431 /* MHConvoreTopic.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		406C97BB130C816800EDC431 /* MHConvoreTopic.m in Sources */ = {isa = PBXBuildFile; fileRef = 406C97B1130C816800EDC431 /* MHConvoreTopic.m */; };
-		406C97BC130C816800EDC431 /* MHConvoreUser.h in Headers */ = {isa = PBXBuildFile; fileRef = 406C97B2130C816800EDC431 /* MHConvoreUser.h */; };
+		406C97BC130C816800EDC431 /* MHConvoreUser.h in Headers */ = {isa = PBXBuildFile; fileRef = 406C97B2130C816800EDC431 /* MHConvoreUser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		406C97BD130C816800EDC431 /* MHConvoreUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 406C97B3130C816800EDC431 /* MHConvoreUser.m */; };
 		406C97E6130C818800EDC431 /* ASICacheDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 406C97C0130C818800EDC431 /* ASICacheDelegate.h */; };
 		406C97E7130C818800EDC431 /* ASIDataCompressor.h in Headers */ = {isa = PBXBuildFile; fileRef = 406C97C1130C818800EDC431 /* ASIDataCompressor.h */; };
@@ -650,6 +650,7 @@
 				406C978C130C7EB600EDC431 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		406C978D130C7EB600EDC431 /* Build configuration list for PBXNativeTarget "MHConvoreTests" */ = {
 			isa = XCConfigurationList;
@@ -658,6 +659,7 @@
 				406C978F130C7EB600EDC431 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
