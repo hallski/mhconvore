@@ -1,0 +1,441 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		406C9767130C7EB600EDC431 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 406C9766130C7EB600EDC431 /* Cocoa.framework */; };
+		406C9771130C7EB600EDC431 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 406C976F130C7EB600EDC431 /* InfoPlist.strings */; };
+		406C9779130C7EB600EDC431 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 406C9766130C7EB600EDC431 /* Cocoa.framework */; };
+		406C977C130C7EB600EDC431 /* MHConvore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 406C9763130C7EB600EDC431 /* MHConvore.framework */; };
+		406C9782130C7EB600EDC431 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 406C9780130C7EB600EDC431 /* InfoPlist.strings */; };
+		406C9785130C7EB600EDC431 /* MHConvoreTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 406C9784130C7EB600EDC431 /* MHConvoreTests.h */; };
+		406C9787130C7EB600EDC431 /* MHConvoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 406C9786130C7EB600EDC431 /* MHConvoreTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		406C977A130C7EB600EDC431 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 406C9759130C7EB600EDC431 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 406C9762130C7EB600EDC431;
+			remoteInfo = MHConvore;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		406C9763130C7EB600EDC431 /* MHConvore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MHConvore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		406C9766130C7EB600EDC431 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		406C9769130C7EB600EDC431 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		406C976A130C7EB600EDC431 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		406C976B130C7EB600EDC431 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		406C976E130C7EB600EDC431 /* MHConvore-Info.plist */ = {isa = PBXFileReference; path = "MHConvore-Info.plist"; sourceTree = "<group>"; };
+		406C9770130C7EB600EDC431 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		406C9772130C7EB600EDC431 /* MHConvore-Prefix.pch */ = {isa = PBXFileReference; path = "MHConvore-Prefix.pch"; sourceTree = "<group>"; };
+		406C9778130C7EB600EDC431 /* MHConvoreTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MHConvoreTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		406C977F130C7EB600EDC431 /* MHConvoreTests-Info.plist */ = {isa = PBXFileReference; path = "MHConvoreTests-Info.plist"; sourceTree = "<group>"; };
+		406C9781130C7EB600EDC431 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		406C9783130C7EB600EDC431 /* MHConvoreTests-Prefix.pch */ = {isa = PBXFileReference; path = "MHConvoreTests-Prefix.pch"; sourceTree = "<group>"; };
+		406C9784130C7EB600EDC431 /* MHConvoreTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHConvoreTests.h; sourceTree = "<group>"; };
+		406C9786130C7EB600EDC431 /* MHConvoreTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHConvoreTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		406C975F130C7EB600EDC431 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				406C9767130C7EB600EDC431 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		406C9774130C7EB600EDC431 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				406C9779130C7EB600EDC431 /* Cocoa.framework in Frameworks */,
+				406C977C130C7EB600EDC431 /* MHConvore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		406C9757130C7EB600EDC431 = {
+			isa = PBXGroup;
+			children = (
+				406C976C130C7EB600EDC431 /* MHConvore */,
+				406C977D130C7EB600EDC431 /* MHConvoreTests */,
+				406C9765130C7EB600EDC431 /* Frameworks */,
+				406C9764130C7EB600EDC431 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		406C9764130C7EB600EDC431 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				406C9763130C7EB600EDC431 /* MHConvore.framework */,
+				406C9778130C7EB600EDC431 /* MHConvoreTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		406C9765130C7EB600EDC431 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				406C9766130C7EB600EDC431 /* Cocoa.framework */,
+				406C9768130C7EB600EDC431 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		406C9768130C7EB600EDC431 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				406C9769130C7EB600EDC431 /* AppKit.framework */,
+				406C976A130C7EB600EDC431 /* CoreData.framework */,
+				406C976B130C7EB600EDC431 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		406C976C130C7EB600EDC431 /* MHConvore */ = {
+			isa = PBXGroup;
+			children = (
+				406C976D130C7EB600EDC431 /* Supporting Files */,
+			);
+			path = MHConvore;
+			sourceTree = "<group>";
+		};
+		406C976D130C7EB600EDC431 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				406C976E130C7EB600EDC431 /* MHConvore-Info.plist */,
+				406C976F130C7EB600EDC431 /* InfoPlist.strings */,
+				406C9772130C7EB600EDC431 /* MHConvore-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		406C977D130C7EB600EDC431 /* MHConvoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				406C9784130C7EB600EDC431 /* MHConvoreTests.h */,
+				406C9786130C7EB600EDC431 /* MHConvoreTests.m */,
+				406C977E130C7EB600EDC431 /* Supporting Files */,
+			);
+			path = MHConvoreTests;
+			sourceTree = "<group>";
+		};
+		406C977E130C7EB600EDC431 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				406C977F130C7EB600EDC431 /* MHConvoreTests-Info.plist */,
+				406C9780130C7EB600EDC431 /* InfoPlist.strings */,
+				406C9783130C7EB600EDC431 /* MHConvoreTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		406C9760130C7EB600EDC431 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		406C9762130C7EB600EDC431 /* MHConvore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 406C978A130C7EB600EDC431 /* Build configuration list for PBXNativeTarget "MHConvore" */;
+			buildPhases = (
+				406C975E130C7EB600EDC431 /* Sources */,
+				406C975F130C7EB600EDC431 /* Frameworks */,
+				406C9760130C7EB600EDC431 /* Headers */,
+				406C9761130C7EB600EDC431 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MHConvore;
+			productName = MHConvore;
+			productReference = 406C9763130C7EB600EDC431 /* MHConvore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		406C9777130C7EB600EDC431 /* MHConvoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 406C978D130C7EB600EDC431 /* Build configuration list for PBXNativeTarget "MHConvoreTests" */;
+			buildPhases = (
+				406C9773130C7EB600EDC431 /* Sources */,
+				406C9774130C7EB600EDC431 /* Frameworks */,
+				406C9775130C7EB600EDC431 /* Resources */,
+				406C9776130C7EB600EDC431 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				406C977B130C7EB600EDC431 /* PBXTargetDependency */,
+			);
+			name = MHConvoreTests;
+			productName = MHConvoreTests;
+			productReference = 406C9778130C7EB600EDC431 /* MHConvoreTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		406C9759130C7EB600EDC431 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Mikael Hallendal";
+			};
+			buildConfigurationList = 406C975C130C7EB600EDC431 /* Build configuration list for PBXProject "MHConvore" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 406C9757130C7EB600EDC431;
+			productRefGroup = 406C9764130C7EB600EDC431 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				406C9762130C7EB600EDC431 /* MHConvore */,
+				406C9777130C7EB600EDC431 /* MHConvoreTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		406C9761130C7EB600EDC431 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				406C9771130C7EB600EDC431 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		406C9775130C7EB600EDC431 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				406C9782130C7EB600EDC431 /* InfoPlist.strings in Resources */,
+				406C9785130C7EB600EDC431 /* MHConvoreTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		406C9776130C7EB600EDC431 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		406C975E130C7EB600EDC431 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		406C9773130C7EB600EDC431 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				406C9787130C7EB600EDC431 /* MHConvoreTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		406C977B130C7EB600EDC431 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 406C9762130C7EB600EDC431 /* MHConvore */;
+			targetProxy = 406C977A130C7EB600EDC431 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		406C976F130C7EB600EDC431 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				406C9770130C7EB600EDC431 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		406C9780130C7EB600EDC431 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				406C9781130C7EB600EDC431 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		406C9788130C7EB600EDC431 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		406C9789130C7EB600EDC431 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		406C978B130C7EB600EDC431 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MHConvore/MHConvore-Prefix.pch";
+				INFOPLIST_FILE = "MHConvore/MHConvore-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		406C978C130C7EB600EDC431 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MHConvore/MHConvore-Prefix.pch";
+				INFOPLIST_FILE = "MHConvore/MHConvore-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		406C978E130C7EB600EDC431 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MHConvoreTests/MHConvoreTests-Prefix.pch";
+				INFOPLIST_FILE = "MHConvoreTests/MHConvoreTests-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		406C978F130C7EB600EDC431 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MHConvoreTests/MHConvoreTests-Prefix.pch";
+				INFOPLIST_FILE = "MHConvoreTests/MHConvoreTests-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		406C975C130C7EB600EDC431 /* Build configuration list for PBXProject "MHConvore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				406C9788130C7EB600EDC431 /* Debug */,
+				406C9789130C7EB600EDC431 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		406C978A130C7EB600EDC431 /* Build configuration list for PBXNativeTarget "MHConvore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				406C978B130C7EB600EDC431 /* Debug */,
+				406C978C130C7EB600EDC431 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		406C978D130C7EB600EDC431 /* Build configuration list for PBXNativeTarget "MHConvoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				406C978E130C7EB600EDC431 /* Debug */,
+				406C978F130C7EB600EDC431 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 406C9759130C7EB600EDC431 /* Project object */;
+}
