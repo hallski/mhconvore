@@ -12,8 +12,6 @@
 		406C9779130C7EB600EDC431 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 406C9766130C7EB600EDC431 /* Cocoa.framework */; };
 		406C977C130C7EB600EDC431 /* MHConvore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 406C9763130C7EB600EDC431 /* MHConvore.framework */; };
 		406C9782130C7EB600EDC431 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 406C9780130C7EB600EDC431 /* InfoPlist.strings */; };
-		406C9785130C7EB600EDC431 /* MHConvoreTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 406C9784130C7EB600EDC431 /* MHConvoreTests.h */; };
-		406C9787130C7EB600EDC431 /* MHConvoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 406C9786130C7EB600EDC431 /* MHConvoreTests.m */; };
 		406C97A5130C80F600EDC431 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 406C97A4130C80F600EDC431 /* CoreServices.framework */; };
 		406C97A7130C810000EDC431 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 406C97A6130C810000EDC431 /* libz.dylib */; };
 		406C97A9130C813500EDC431 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 406C97A8130C813500EDC431 /* SystemConfiguration.framework */; };
@@ -64,6 +62,7 @@
 		406C9808130C818800EDC431 /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = 406C97E3130C818800EDC431 /* SBJsonTokeniser.m */; };
 		406C9809130C818800EDC431 /* SBJsonWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 406C97E4130C818800EDC431 /* SBJsonWriter.h */; };
 		406C980A130C818800EDC431 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 406C97E5130C818800EDC431 /* SBJsonWriter.m */; };
+		40EE4D7F130C94AC0034BF3C /* MHConvoreClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 40EE4D7E130C94AC0034BF3C /* MHConvoreClientTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,8 +88,6 @@
 		406C977F130C7EB600EDC431 /* MHConvoreTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MHConvoreTests-Info.plist"; sourceTree = "<group>"; };
 		406C9781130C7EB600EDC431 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		406C9783130C7EB600EDC431 /* MHConvoreTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MHConvoreTests-Prefix.pch"; sourceTree = "<group>"; };
-		406C9784130C7EB600EDC431 /* MHConvoreTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHConvoreTests.h; sourceTree = "<group>"; };
-		406C9786130C7EB600EDC431 /* MHConvoreTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHConvoreTests.m; sourceTree = "<group>"; };
 		406C97A4130C80F600EDC431 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
 		406C97A6130C810000EDC431 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		406C97A8130C813500EDC431 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -141,6 +138,8 @@
 		406C97E3130C818800EDC431 /* SBJsonTokeniser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonTokeniser.m; sourceTree = "<group>"; };
 		406C97E4130C818800EDC431 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
 		406C97E5130C818800EDC431 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		40EE4D7D130C94AC0034BF3C /* MHConvoreClientTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHConvoreClientTests.h; sourceTree = "<group>"; };
+		40EE4D7E130C94AC0034BF3C /* MHConvoreClientTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHConvoreClientTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -240,9 +239,9 @@
 		406C977D130C7EB600EDC431 /* MHConvoreTests */ = {
 			isa = PBXGroup;
 			children = (
-				406C9784130C7EB600EDC431 /* MHConvoreTests.h */,
-				406C9786130C7EB600EDC431 /* MHConvoreTests.m */,
 				406C977E130C7EB600EDC431 /* Supporting Files */,
+				40EE4D7D130C94AC0034BF3C /* MHConvoreClientTests.h */,
+				40EE4D7E130C94AC0034BF3C /* MHConvoreClientTests.m */,
 			);
 			path = MHConvoreTests;
 			sourceTree = "<group>";
@@ -433,7 +432,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				406C9782130C7EB600EDC431 /* InfoPlist.strings in Resources */,
-				406C9785130C7EB600EDC431 /* MHConvoreTests.h in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,7 +486,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				406C9787130C7EB600EDC431 /* MHConvoreTests.m in Sources */,
+				40EE4D7F130C94AC0034BF3C /* MHConvoreClientTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
