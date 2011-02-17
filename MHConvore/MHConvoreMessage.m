@@ -35,7 +35,9 @@
     
     self.message = [dict valueForKey:@"message"];
     self.renderedMessage = [dict valueForKey:@"rendered"];
-    self.messageId = [dict valueForKey:@"id"];
+   
+    // Seems to sometimes get ID as NSNumber from JSON
+    self.messageId = [[dict valueForKey:@"id"] description];
     self.groupId = [[dict valueForKey:@"group"] stringValue];
     self.topic = [[[MHConvoreTopic alloc] initWithDictionary:[dict valueForKey:@"topic"]] autorelease];
     self.user = [[[MHConvoreUser alloc] initWithDictionary:[dict valueForKey:@"user"]] autorelease];

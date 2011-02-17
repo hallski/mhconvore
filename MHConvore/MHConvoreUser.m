@@ -32,7 +32,9 @@
   //  NSLog(@"User from dict: %@", dict);
     
     self.name = [dict valueForKey:@"username"];
-    self.userId = [dict valueForKey:@"id"];
+    
+    // Seems to sometimes get ID as NSNumber from JSON
+    self.userId = [[dict valueForKey:@"id"] description];
     self.avatarURL = [dict valueForKey:@"img"];
     self.url = [NSURL URLWithString:[dict valueForKey:@"url"] relativeToURL:[MHConvoreClient baseURL]];
     
