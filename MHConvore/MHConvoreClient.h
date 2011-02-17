@@ -15,6 +15,7 @@
 
 @protocol MHConvoreClientListener <NSObject>
 
+@optional
 - (void)newMessage:(MHConvoreMessage *)message;
 - (void)logout:(MHConvoreUser *)user;
 - (void)login:(MHConvoreUser *)user;
