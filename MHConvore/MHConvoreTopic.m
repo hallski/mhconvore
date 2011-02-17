@@ -29,9 +29,14 @@
 {
     self = [self init];
     
-  //  NSLog(@"Topic from dict: %@", dict);
+    NSLog(@"Topic from dict: %@", dict);
+    id idObject = [dict valueForKey:@"id"];
+    if ([idObject isKindOfClass:[NSNumber class]]) {
+        idObject = [idObject stringValue];
+    }
 
-    self.topicId = [dict valueForKey:@"id"];
+    self.topicId = idObject;
+    NSLog(@"New topic with topicId of class: %@", [self.topicId class]);
     self.name = [dict valueForKey:@"name"];
     self.url = [NSURL URLWithString:[dict valueForKey:@"url"] relativeToURL:[MHConvoreClient baseURL]];
     

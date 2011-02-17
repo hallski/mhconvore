@@ -38,7 +38,11 @@
     self = [self init];
   //  NSLog(@"Group from dict: %@", dict);
 
-    self.groupId = [dict valueForKey:@"id"];
+    id idObject = [dict valueForKey:@"id"];
+    if ([idObject isKindOfClass:[NSNumber class]]) {
+        idObject = [idObject stringValue];
+    }
+    self.groupId = idObject;
     self.name = [dict valueForKey:@"name"];
     self.slug = [dict valueForKey:@"slug"];
     self.description = [dict valueForKey:@"description"];

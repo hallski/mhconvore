@@ -13,7 +13,7 @@
 @implementation MHConvoreMessage
 @synthesize user;
 @synthesize topic;
-@synthesize group;
+@synthesize groupId;
 @synthesize date;
 @synthesize messageId;
 @synthesize message;
@@ -36,6 +36,7 @@
     self.message = [dict valueForKey:@"message"];
     self.renderedMessage = [dict valueForKey:@"rendered"];
     self.messageId = [dict valueForKey:@"id"];
+    self.groupId = [[dict valueForKey:@"group"] stringValue];
     self.topic = [[[MHConvoreTopic alloc] initWithDictionary:[dict valueForKey:@"topic"]] autorelease];
     self.user = [[[MHConvoreUser alloc] initWithDictionary:[dict valueForKey:@"user"]] autorelease];
     

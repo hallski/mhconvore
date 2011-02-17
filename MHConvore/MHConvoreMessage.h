@@ -10,13 +10,12 @@
 
 @class MHConvoreUser;
 @class MHConvoreTopic;
-@class MHConvoreGroup;
 
 @interface MHConvoreMessage : NSObject {
 @private
     MHConvoreUser *user;
     MHConvoreTopic *topic;
-    MHConvoreGroup *group;
+    NSString *groupId;
     NSDate *date;
     NSString *messageId;
     NSString *message;
@@ -24,7 +23,7 @@
 }
 @property(nonatomic, retain) MHConvoreUser *user;
 @property(nonatomic, retain) MHConvoreTopic *topic;
-@property(nonatomic, retain) MHConvoreGroup *group;
+@property(nonatomic, retain) NSString *groupId;
 @property(nonatomic, retain) NSDate *date; // Not implemented
 @property(nonatomic, copy) NSString *messageId;
 @property(nonatomic, copy) NSString *message;
