@@ -12,11 +12,16 @@
 #import "JSON.h"
 #import "MHConvoreMessage.h"
 
+#define DEFAULT_LIVE_TIMEOUT 60
+#define DEFAULT_LIVE_FREQUENCY 0
+
 @implementation MHConvoreClient
 @synthesize listener;
 @synthesize username;
 @synthesize password;
 @synthesize cursor;
+@synthesize liveTimeout;
+@synthesize liveFrequency;
 
 + (MHConvoreClient *)clientWithUsername:(NSString *)username password:(NSString *)password
 {
@@ -32,6 +37,8 @@
 {
     self = [super init];
     if (self) {
+        self.liveTimeout = DEFAULT_LIVE_TIMEOUT;
+        self.liveFrequency = DEFAULT_LIVE_FREQUENCY;
         // Initialization code here.
     }
     
@@ -106,7 +113,7 @@
 {
     [request setUsername:self.username];
     [request setPassword:self.password];
-    [request setTimeOutSeconds:60];
+    [request setTimeOutSeconds:self.liveTimeout];
 }
 
 - (NSURL *)urlForRequestWithPath:(NSString *)path

@@ -28,11 +28,15 @@
     NSString *username;
     NSString *password;
     NSString *cursor;
+    NSInteger liveTimeout;
+    NSInteger liveFrequency;
 }
 @property(nonatomic, retain) id<MHConvoreClientListener> listener;
 @property(nonatomic, copy) NSString *username;
 @property(nonatomic, copy) NSString *password;
 @property(nonatomic, copy) NSString *cursor; // Need implementing
+@property NSInteger liveTimeout; // Timeout of the live API call
+@property NSInteger liveFrequency; // Seconds between polls to the live API.
 
 + (MHConvoreClient *)clientWithUsername:(NSString *)username password:(NSString *)password;
 

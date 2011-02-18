@@ -8,10 +8,11 @@
 
 #import <SenTestingKit/SenTestingKit.h>
 
+@class MHConvoreClient;
 
 @interface MHConvoreClientTests : SenTestCase {
 @private
-    
+    MHConvoreClient *client;
 }
 
 @end
