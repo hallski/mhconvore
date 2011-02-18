@@ -76,7 +76,6 @@
     STAssertEqualObjects(@"username", request.username, nil);
     STAssertEqualObjects(@"password", request.password, nil);
     STAssertEquals(client.liveTimeout, (NSInteger)request.timeOutSeconds, nil);
-    
 }
 
 @end
