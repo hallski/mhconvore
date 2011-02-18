@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40479ECC130EA238008B3CB9 /* NSArray+MHExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 40479ECA130EA238008B3CB9 /* NSArray+MHExtensions.h */; };
+		40479ECD130EA238008B3CB9 /* NSArray+MHExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 40479ECB130EA238008B3CB9 /* NSArray+MHExtensions.m */; };
 		406C9767130C7EB600EDC431 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 406C9766130C7EB600EDC431 /* Cocoa.framework */; };
 		406C9771130C7EB600EDC431 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 406C976F130C7EB600EDC431 /* InfoPlist.strings */; };
 		406C9779130C7EB600EDC431 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 406C9766130C7EB600EDC431 /* Cocoa.framework */; };
@@ -76,6 +78,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		40479ECA130EA238008B3CB9 /* NSArray+MHExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSArray+MHExtensions.h"; path = "../../MHConvore/NSArray+MHExtensions.h"; sourceTree = "<group>"; };
+		40479ECB130EA238008B3CB9 /* NSArray+MHExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+MHExtensions.m"; path = "../../MHConvore/NSArray+MHExtensions.m"; sourceTree = "<group>"; };
 		406C9763130C7EB600EDC431 /* MHConvore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MHConvore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		406C9766130C7EB600EDC431 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		406C9769130C7EB600EDC431 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -166,6 +170,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		40479F0C130EA42D008B3CB9 /* MHExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				40479ECA130EA238008B3CB9 /* NSArray+MHExtensions.h */,
+				40479ECB130EA238008B3CB9 /* NSArray+MHExtensions.m */,
+			);
+			path = MHExtensions;
+			sourceTree = "<group>";
+		};
 		406C9757130C7EB600EDC431 = {
 			isa = PBXGroup;
 			children = (
@@ -259,6 +272,7 @@
 		406C97BE130C818800EDC431 /* External */ = {
 			isa = PBXGroup;
 			children = (
+				40479F0C130EA42D008B3CB9 /* MHExtensions */,
 				406C97BF130C818800EDC431 /* ASIHTTPRequest */,
 				406C97D2130C818800EDC431 /* JSON */,
 			);
@@ -349,6 +363,7 @@
 				406C9805130C818800EDC431 /* SBJsonStreamWriterState.h in Headers */,
 				406C9807130C818800EDC431 /* SBJsonTokeniser.h in Headers */,
 				406C9809130C818800EDC431 /* SBJsonWriter.h in Headers */,
+				40479ECC130EA238008B3CB9 /* NSArray+MHExtensions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -479,6 +494,7 @@
 				406C9806130C818800EDC431 /* SBJsonStreamWriterState.m in Sources */,
 				406C9808130C818800EDC431 /* SBJsonTokeniser.m in Sources */,
 				406C980A130C818800EDC431 /* SBJsonWriter.m in Sources */,
+				40479ECD130EA238008B3CB9 /* NSArray+MHExtensions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

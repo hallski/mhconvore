@@ -11,6 +11,8 @@
 #import "ASIFormDataRequest.h"
 #import "JSON.h"
 #import "MHConvoreMessage.h"
+#import "NSArray+MHExtensions.h"
+
 
 #define DEFAULT_LIVE_TIMEOUT 60
 #define DEFAULT_LIVE_FREQUENCY 0
@@ -90,18 +92,6 @@
     NSLog(@"Dispatch new topic: %@", message);
 }
 
-// Would be nice to have on NSArray but want to avoid changing NSArray class for applications using MHConvore
-- (NSArray *)arrayByPerformingBlock:(id (^) (id object))block onArray:(NSArray *)array
-{
-    NSMutableArray *retVal = [NSMutableArray arrayWithCapacity:[array count]];
-    
-    for (id object in array) {
-        [retVal addObject:block(object)];
-    }
-    
-    return [NSArray arrayWithArray:retVal];
-}
-
 - (NSString *)dispatchSelectorFromKind:(NSString *)kind
 {
     /* Should handle:
@@ -110,11 +100,9 @@
      */
     
     NSArray *kindComponents = [kind componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@" -"]];
-    NSArray *capitilizedComponents = [self arrayByPerformingBlock:^ id (id object) {
+    NSArray *capitilizedComponents = [kindComponents arrayByApplyingBlock:^ id (id object) {
         return [((NSString *)object) capitalizedString];
-    } 
-                                                          onArray:kindComponents];
-    
+    }];
     return [NSString stringWithFormat:@"dispatch%@:", [capitilizedComponents componentsJoinedByString:@""]];
 }
 
