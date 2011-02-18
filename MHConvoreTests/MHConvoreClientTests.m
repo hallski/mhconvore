@@ -9,6 +9,11 @@
 #import "MHConvoreClientTests.h"
 #import "MHConvoreClient.h"
 
+@interface MHConvoreClient (TestAPI)
+
+- (NSString *)dispatchSelectorFromKind:(NSString *)kind;
+
+@end
 
 @implementation MHConvoreClientTests
 
@@ -47,6 +52,13 @@
     STAssertEquals(client.liveFrequency, (NSInteger)0, nil);
     client.liveFrequency = 30;
     STAssertEquals(client.liveFrequency, (NSInteger)30, nil);
+}
+
+- (void)testDispatcherNameFromKind
+{
+    STAssertEqualObjects(@"dispatchMessage:", [client dispatchSelectorFromKind:@"message"], nil);
+    STAssertEqualObjects(@"dispatchMessage:", [client dispatchSelectorFromKind:@"MeSsage"], nil);
+    STAssertEqualObjects(@"dispatchNewTopic:", [client dispatchSelectorFromKind:@"new-topic"], nil);
 }
 
 @end

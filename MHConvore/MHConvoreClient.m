@@ -90,9 +90,31 @@
     NSLog(@"Dispatch new topic: %@", message);
 }
 
+- (NSArray *)arrayByPerformingBlock:(id (^) (id object))block onArray:(NSArray *)array
+{
+    NSMutableArray *retVal = [NSMutableArray arrayWithCapacity:[array count]];
+    
+    for (id object in array) {
+        [retVal addObject:block(object)];
+    }
+    
+    return [NSArray arrayWithArray:retVal];
+}
+
 - (NSString *)dispatchSelectorFromKind:(NSString *)kind
 {
-    return [NSString stringWithFormat:@"dispatch%@:", [kind capitalizedString]];
+    /* Should handle:
+     * message -> dispatchMessage:
+     * new-topic -> dispatchNewTopic:
+     */
+    
+    NSArray *kindComponents = [kind componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@" -"]];
+    NSArray *capitilizedComponents = [self arrayByPerformingBlock:^ id (id object) {
+        return [((NSString *)object) capitalizedString];
+    } 
+                                                          onArray:kindComponents];
+    
+    return [NSString stringWithFormat:@"dispatch%@:", [capitilizedComponents componentsJoinedByString:@""]];
 }
 
 - (void)dispatchMessageFromDict:(NSDictionary *)message
