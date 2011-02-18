@@ -9,9 +9,12 @@
 #import "MHConvoreClientTests.h"
 #import "MHConvoreClient.h"
 
+#import "ASIHTTPRequest.h"
+
 @interface MHConvoreClient (TestAPI)
 
 - (NSString *)dispatchSelectorFromKind:(NSString *)kind;
+- (void)setupHTTPRequest:(ASIHTTPRequest *)request;
 
 @end
 
@@ -59,6 +62,21 @@
     STAssertEqualObjects(@"dispatchMessage:", [client dispatchSelectorFromKind:@"message"], nil);
     STAssertEqualObjects(@"dispatchMessage:", [client dispatchSelectorFromKind:@"MeSsage"], nil);
     STAssertEqualObjects(@"dispatchNewTopic:", [client dispatchSelectorFromKind:@"new-topic"], nil);
+}
+
+- (void)testSetupHTTPRequest
+{
+    ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:[MHConvoreClient baseURL]];
+    
+    client.username = @"username";
+    client.password = @"password";
+    
+    [client setupHTTPRequest:request];
+    
+    STAssertEqualObjects(@"username", request.username, nil);
+    STAssertEqualObjects(@"password", request.password, nil);
+    STAssertEquals(client.liveTimeout, (NSInteger)request.timeOutSeconds, nil);
+    
 }
 
 @end
