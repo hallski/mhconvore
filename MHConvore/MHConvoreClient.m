@@ -90,6 +90,7 @@
     NSLog(@"Dispatch new topic: %@", message);
 }
 
+// Would be nice to have on NSArray but want to avoid changing NSArray class for applications using MHConvore
 - (NSArray *)arrayByPerformingBlock:(id (^) (id object))block onArray:(NSArray *)array
 {
     NSMutableArray *retVal = [NSMutableArray arrayWithCapacity:[array count]];
